@@ -597,7 +597,7 @@ a {
   list-style: none;
   margin: 0;
   padding-top: 36px;
-  padding-left: 67.4%;
+  padding-left: 63%;
 }
 
 .social-link-twitter,
@@ -628,7 +628,10 @@ a {
 
 .social-link-fb::before {
   content: '';
-  content: url("../img/icon-fb.svg");
+  background-image: url("../img/icon-fb.svg");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 22px;
   position: absolute;
   left: 10px;
   top: 10px;
@@ -636,7 +639,10 @@ a {
 
 .social-link-youtube::before {
   content: '';
-  content: url("../img/icon-youtb.svg");
+  background-image: url("../img/icon-youtb.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 16px;
   position: absolute;
   left: 10px;
   top: 10px;
@@ -651,7 +657,8 @@ a {
 
 .developer-site-link::after {
   content: '';
-  background: url(../img/html-a.svg);
+  background-image: url(../img/html-a.svg);
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   display: block;
   width: 115px;
@@ -688,6 +695,7 @@ a {
 .label-text,
 .min-price,
 .max-price,
+.form-price,
 .btn-transparent {
   color: #ffffff;
   text-transform: uppercase;
@@ -702,7 +710,11 @@ a {
 }
 
 .cost-per-day-range {
-  padding-left: 29.5%;
+  padding-left: 30%;
+}
+
+.checkbox-container {
+  position: relative;
 }
 
 .checkbox-container-infrastructure {
@@ -715,6 +727,26 @@ a {
   padding-left: 17%;
 }
 
+.label-text {
+  padding-left: 15%;
+}
+
+.label-text::before {
+  content: url("../img/checkbox-off.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  padding-top: 25px;
+}
+
+.checkbox-input:checked + .label-text::before {
+  content: url("../img/checkbox-on.svg");
+  width: 27px;
+  height: 23px;
+}
+
 .form-price {
   background: transparent;
   border: none;
@@ -723,9 +755,62 @@ a {
 .price-controls {
   border-bottom: 2px solid #ffffff;
   border-radius: 3px;
+  width: 90%;
   min-height: 32px;
   padding-top: 10px;
   text-align: center;
+}
+
+.range-controls {
+	position: relative;
+  display: block;
+  width: 89.5%;
+	overflow: hidden;
+  border-radius: 3px;
+}
+
+.scale {
+	height: 2px;
+  margin-top: 23px;
+  margin-bottom: 33px;
+	background: #918382;
+}
+
+.bar {
+	width: 85%;
+	height: 2px;
+	background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: 14px;
+	width: 4px;
+	height: 4px;
+	border: 8px solid #fff;
+	background: #ababab;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range-toggle-min {
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 79%;
+}
+
+.btn-transparent {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  border-radius: 3px;
+  width: 39%;
+  min-height: 32px;
+  padding-top: 10px;
+  text-align: center;
+  margin-left: 24%;
 }
 
 .result-sorting,
@@ -766,6 +851,7 @@ a {
 .sorting-type {
   padding-left: 4%;
 }
+
 .sorting-item-link {
   color: #e0e0e0;
   text-decoration-style: dashed;
@@ -773,4 +859,59 @@ a {
 
 .sorting-item-link-current {
   color: #81b3d2;
+}
+
+.hotels-found-one,
+.hotels-found-two,
+.hotels-found-three {
+  display: flex;
+  margin-left: 6%;
+}
+
+.about-housing {
+  margin-left: 3%;
+}
+
+.name-housing {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  width: 100%;
+}
+
+.type-price {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.type-housing-text-one {
+  margin-right: 16%;
+}
+
+.more-info-button {
+  background-color: #81b3d2;
+  width: 110px;
+  height: 27px;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.book-it-button {
+  background-color: #766357;
+  width: 142px;
+  height: 27px;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.rating-housing {
+
 }
