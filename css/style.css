@@ -515,12 +515,34 @@ a {
   padding: 0;
 }
 
-.arrival-departure-form-one::after,
-.arrival-departure-form-two::after  {
-  content: url("../img/calendar.svg");
+.calendar-one {
   position: absolute;
-  top: 8px;
-  right: 9px;
+  top: 63px;
+  right: 64px;
+  fill: #a9a9a9;
+}
+
+.calendar-one:hover {
+  fill: #000000;
+}
+
+.calendar-one:active {
+  fill: #82b3d3;
+}
+
+.calendar-two {
+  position: absolute;
+  top: 130px;
+  right: 64px;
+  fill: #a9a9a9;
+}
+
+.calendar-two:hover {
+  fill: #000000;
+}
+
+.calendar-two:active {
+  fill: #82b3d3;
 }
 
 .arrival-departure-form-one:hover,
@@ -610,7 +632,7 @@ a {
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
-  /* min-height: 120px; */
+  min-height: 120px;
   justify-content: space-between;
 }
 
@@ -633,7 +655,7 @@ a {
 
 .social-button {
   margin-right: 0%;
-  margin-left: 2%;
+  margin-left: 2.3%;
 }
 
 .social-list {
@@ -656,11 +678,26 @@ a {
   display: inline-block;
 }
 
+.social-link-twitter:hover,
+.social-link-fb:hover,
+.social-link-youtube:hover {
+  background-color: #669ebf;
+}
+
+.social-link-twitter:active,
+.social-link-fb:active,
+.social-link-youtube:active {
+  background-color: #5596be;
+}
+
 .social-link-twitter {
   margin-left: 0;
 }
 
-.social-link-twitter::before {
+.icon-twitter {
+  fill: #ffffff;
+}
+/* .social-link-twitter::before {
   content: '';
   background-image: url("../img/icon-twitter.svg");
   background-repeat: no-repeat;
@@ -691,33 +728,39 @@ a {
   position: absolute;
   left: 13px;
   top: 16px;
-}
+} */
 
 .developer-site {
   margin-top: 39px;
   margin-right: 8.4%;
+  display: flex;
+  width: 16.3%;
 }
 
 .developer-site-link {
-  line-height: 26px;
   color: #000000;
   text-transform: uppercase;
-  /* display: flex; */
+  display: flex;
 }
 
-.developed-text {
-  padding-right: 2%;
+.developer-text {
+  padding-right: 3%;
+  width: 39%;
+  margin: 0;
+  margin-top: 11px;
 }
 
-/* .developer-site-link::after {
-  content: '';
-  background-image: url(../img/html-a.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: block;
-  width: 115px;
-  height: 41px;
-} */
+.developer-logo {
+  fill: #000000;
+}
+
+.developer-logo:hover {
+  fill: #82b3d1;
+}
+
+.developer-logo:active {
+  fill: #bdbbbc;
+}
 
 .filter-block {
   background-image:  url("../img/filter-background.jpg");
