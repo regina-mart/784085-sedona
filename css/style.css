@@ -576,25 +576,56 @@ a {
   background-color: #f2f2f2;
   width: 38px;
   height: 38px;
+  background-color: #f2f2f2;
   display: inline-block;
   padding: 0;
+  position: relative;
 }
 
 .btn-plus {
   margin-right: 53px;
 }
 
-.btn-minus::before {
-  content: '';
-  background-image: url("../img/minus.png");
-  background-repeat: no-repeat;
+.btn-minus-sign {
   width: 12px;
-  height: 3px;
-  display: inline-block;
+	height: 3px;
+	background: #a9a9a9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.btn-plus::before {
-  content: url("../img/plus.png");
+.btn-plus-sign-one {
+  width: 12px;
+	height: 3px;
+	background: #a9a9a9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-plus-sign-two {
+  width: 12px;
+	height: 3px;
+	background: #a9a9a9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.btn-minus-sign:hover,
+.btn-plus-sign-one:hover,
+.btn-plus-sign-two:hover {
+  background: #000000;
+}
+
+.btn-minus-sign:active,
+.btn-plus-sign-one:active,
+.btn-plus-sign-two:active {
+  background: #84b2d3;
 }
 
 .to-find-button {
@@ -694,8 +725,31 @@ a {
   margin-left: 0;
 }
 
-.icon-twitter {
+.social-twitter {
+  position: absolute;
+  left: 15px;
+  top: 17px;
+    /* fill: #ffffff; */
+}
+
+.social-fb {
+  position: absolute;
+  left: 17px;
+  top: 13px;
   fill: #ffffff;
+}
+
+.social-youtb {
+  position: absolute;
+  left: 13px;
+  top: 16px;
+  fill: #ffffff;
+}
+
+.social-twitter:active,
+.social-fb:active,
+.social-youtb:active {
+  fill: #88b5d2;
 }
 /* .social-link-twitter::before {
   content: '';
