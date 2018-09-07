@@ -103,6 +103,7 @@
                  Укажите предполагаемые даты поездки,<br>
                  и мы покажем вам лучшие предложения гостиниц в седоне
                </p>
+               <div class="hotel-search-form">
                <a class="hotel-search" href="#">
                  <p class="hotel-search-text">Поиск гостиницы в Седоне</p>
                </a>
@@ -185,6 +186,7 @@
                  <a class="to-find-button" href="#">Найти</a>
                </form>
              </div>
+           </div>
              </section>
             </main>
              <footer class="sedona-footer">
@@ -251,5 +253,24 @@
            </div>
            </footer>
     </div>
+    <!-- <script src="/js/sedona.js"></script> -->
+    <script>
+      var link = document.querySelector(".hotel-search");
+      var popup = document.querySelector(".search-form");
+      var close = document.querySelector(".hotel-search");
+
+      link.addEventListener("click", function (evt) {
+       evt.preventDefault();
+       popup.classList.add("search-form-show");
+      // console.log("Клик по кнопке найти гостиницу");
+    });
+
+      close.addEventListener("click", function (evt) {
+       evt.preventDefault();
+       popup.classList.toggle("search-form-show");
+    });
+
+
+    </script>
   </body>
   </html>

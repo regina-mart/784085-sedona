@@ -443,6 +443,11 @@ a {
   margin: 0 auto;
   position: absolute;
   left: 26.4%;
+  display: none;
+}
+
+.search-form-show {
+  display: block;
 }
 
 .arrival-departure-date-name,
