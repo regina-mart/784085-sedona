@@ -591,6 +591,27 @@ a {
   margin-right: 53px;
 }
 
+/* .btn-plus::before {
+width: 12px;
+height: 3px;
+background: #a9a9a9;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: block;
+}
+
+.btn-plus::after {
+width: 12px;
+height: 3px;
+background: #a9a9a9;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(90deg);
+} */
+
 .btn-minus-sign {
   width: 12px;
 	height: 3px;
@@ -658,7 +679,7 @@ a {
 
 .map-sedona-image {
   width: 100%;
-  min-height: 592px;
+  min-height: 587px;
   position: relative;
   z-index: -1;
 }
@@ -673,7 +694,7 @@ a {
 }
 
 .footer-block-index {
-  margin-top: -125px;
+  margin-top: -120px;
 }
 
 .tag-search-internet-text {
@@ -1045,6 +1066,7 @@ a {
 .sorting-list {
   padding: 0;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .sorting-price {
@@ -1053,10 +1075,19 @@ a {
 
 .sorting-type {
   margin-left: 3.5%;
+  border-bottom: dotted;
+  color: #a8c9de;
+}
+
+.sorting-type:active,
+.sorting-rating:active {
+  border-bottom: none;
 }
 
 .sorting-rating {
   margin-left: 4%;
+  border-bottom: dotted;
+  color: #a8c9de;
 }
 
 .sorting-arrow-top {
@@ -1073,7 +1104,6 @@ a {
 
 .sorting-item-link {
   color: #e0e0e0;
-  text-decoration-style: dashed;
 }
 
 .sorting-item-link-current {
