@@ -110,7 +110,7 @@
                <form action="#" method="post">
                   <div class="arrival-departure-date  arrival-departure-one">
                       <label class="arrival-departure-date-name .arrival-date-name" for="date-arrival">Дата заезда:</label>
-                      <input class="arrival-departure-form-one" type="date" name="date" id="date-arrival">
+                      <input class="arrival-departure-form-one" type="date" name="date" id="date-arrival" value="2017-04-24">
                       <svg class="calendar-one" version="1.1" id="calendar-one" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       	 width="21px" height="22px" viewbox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
                       <g id="calendar-one-form">
@@ -135,7 +135,7 @@
                     </div>
                  <div class="arrival-departure-date arrival-departure-two">
                       <label class="arrival-departure-date-name .departure-date-name" for="date-departure">Дата выезда:</label>
-                      <input class="arrival-departure-form-two" type="date" name="date" id="date-departure">
+                      <input class="arrival-departure-form-two" type="date" name="date" id="date-departure" value="2017-07-04">
                       <svg class="calendar-two" version="1.1" id="calendar-two" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       	 width="21px" height="22px" viewbox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
                       <g id="calendar-two-form">
@@ -161,25 +161,15 @@
                  <div class="people-numbers">
                    <div class="grown-people-numbers">
                      <p class="form-text form-text-grown">Взрослые:</p>
-                     <button class="btn-minus">Уменьшение
-                       <div class="btn-minus-sign"></div>
-                     </button>
-                     <input class="number-visitors" type="number">
-                     <button class="btn-plus">Увеличение
-                      <div class="btn-plus-sign-one"></div>
-                      <div class="btn-plus-sign-two"></div>
-                     </button>
+                     <button class="btn-minus">Уменьшение</button>
+                     <input class="number-visitors" type="number" value="2">
+                     <button class="btn-plus">Увеличение</button>
                    </div>
                    <div class="children-people-numbers">
                      <p class="form-text form-text-children">Дети:</p>
-                     <button class="btn-minus">Уменьшение
-                       <div class="btn-minus-sign"></div>
-                     </button>
-                     <input class="number-visitors" type="number">
-                     <button class="btn-plus">Увеличение
-                       <div class="btn-plus-sign-one"></div>
-                       <div class="btn-plus-sign-two"></div>
-                     </button>
+                     <button class="btn-minus">Уменьшение</button>
+                     <input class="number-visitors" type="number" value="0">
+                     <button class="btn-plus">Увеличение</button>
                    </div>
                  </div>
                  <a class="to-find-button" href="#">Найти</a>
@@ -204,8 +194,6 @@
                    <a class="social-link-twitter" href="#">
                      <svg class="social-twitter" version="1.1" id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      	 width="17px" height="15px" viewbox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
-                     <image overflow="visible" width="17" height="15" xlink:href="t.png" >
-                     </image>
                      <g id="W6EeEF_1_">
                      	<g>
                      		<path d="M10.95,0.144c1.685-0.496,2.984,0.27,3.577,1.179c0.673-0.231,1.331-0.481,2.011-0.708
@@ -233,8 +221,6 @@
                    <a class="social-link-youtube" href="#">
                      <svg class="social-youtb" version="1.1" id="youtb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      	 width="20px" height="16px" viewbox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
-                     <image overflow="visible" enable-background="new    " width="20" height="16" xlink:href="youtube.png" >
-                     </image>
                      <path d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
                      	 M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
                      </svg>
@@ -263,14 +249,14 @@
 
       link.addEventListener("click", function (evt) {
        evt.preventDefault();
-       popup.classList.add("search-form-show");
+       popup.classList.toggle(".search-form-show");
        dateArrival.focus();
       // console.log("Клик по кнопке найти гостиницу");
     });
 
       close.addEventListener("click", function (evt) {
        evt.preventDefault();
-       // popup.classList.toggle("search-form-show");
+       popup.classList.toggle("search-form-show");
     });
 
     form.addEventListener("submit", function (evt) {
