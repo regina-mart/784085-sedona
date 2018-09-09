@@ -8,8 +8,6 @@
   link.addEventListener("click", function (evt) {
    evt.preventDefault();
    popup.classList.toggle(".search-form-show");
-   dateArrival.focus();
-  // console.log("Клик по кнопке найти гостиницу");
 });
 
   close.addEventListener("click", function (evt) {
