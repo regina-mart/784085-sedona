@@ -50,6 +50,7 @@ a {
   background-position: 50% 132px, 50% 0px;
   position: relative;
   min-height: 564px;
+  background-color: #96868f;
 }
 
 .main-header-image::after {
@@ -155,6 +156,7 @@ a {
   text-transform: uppercase;
   width: 37%;
   display: inline-block;
+  vertical-align: middle;
   margin-left: 31.5%;
   margin-top: 60px;
 }
@@ -205,6 +207,7 @@ a {
   background-repeat: no-repeat;
   background-size: 66.7%;
   background-position: right 54%;
+  background-color: #898578;
 }
 
 .about-sedona-image-two {
@@ -214,6 +217,7 @@ a {
   background-position: left 53%;
   margin-top: 82px;
   margin-left: 0;
+  background-color: #d2997f;
 }
 
 .about-sedona-caption-one {
@@ -287,10 +291,11 @@ a {
 }
 
 .about-sedona-advantages-housing::before {
-  content: url(../img/icon-housing.svg);
+  content: url("../img/icon-housing.svg");
   position: absolute;
   top: 0;
   left: 41%;
+  width: 75px;
 }
 
 .about-sedona-caption-housing {
@@ -308,10 +313,11 @@ a {
 }
 
 .about-sedona-advantages-food::before {
-  content: url(../img/icon-food.svg);
+  content: url("../img/icon-food.svg");
   position: absolute;
   top: 1px;
   left: 42.4%;
+  width: 74px;
 }
 
 .about-sedona-caption-food {
@@ -329,10 +335,11 @@ a {
 }
 
 .about-sedona-advantages-souvenirs::before {
-  content: url(../img/icon-souvenirs.svg);
+  content: url("../img/icon-souvenirs.svg");
   position: absolute;
   top: -4px;
   left: 44.5%;
+  width: 64px;
 }
 
 .about-sedona-caption-souvenirs {
@@ -454,6 +461,7 @@ a {
     min-height: 86px;
     background-color: #766357;
     display: inline-block;
+    vertical-align: middle;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
@@ -477,6 +485,7 @@ a {
   position: absolute;
   left: 26.4%;
   display: none;
+  z-index: 100;
 }
 
 .search-form-show {
@@ -558,6 +567,10 @@ a {
   width: 345px;
   height: 38px;
   position: relative;
+  padding-left: 12px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .number-visitors {
@@ -565,6 +578,9 @@ a {
   height: 38px;
   font-size: 14px;
   padding: 0;
+  padding-left: 15px;
+  box-sizing: border-box;
+  font-weight: 700;
 }
 
 .calendar-one {
@@ -627,6 +643,7 @@ a {
   height: 38px;
   background-color: #f2f2f2;
   display: inline-block;
+  vertical-align: middle;
   padding: 0;
   position: relative;
 }
@@ -695,6 +712,7 @@ content: '';
   min-height: 58px;
   background-color: #81b3d2;
   display: inline-block;
+  vertical-align: middle;
   padding-top: 17px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -710,14 +728,35 @@ content: '';
   color: #96b8d1;
 }
 
-.map-sedona-image {
+.map-sedona {
+  position: relative;
+
+  background-image:  url("../img/map.jpg");
+  background-repeat: no-repeat;
   width: 100%;
   min-height: 587px;
-  position: relative;
-  z-index: -1;
+  background-color: #626d76;
 }
 
-.footer-block {
+.map-frame {
+  width: 100%;
+  height: 587px;
+  z-index: 0;
+}
+
+/* .map-sedona-image {
+  width: 100%;
+  min-height: 587px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+} */
+
+.footer-block,
+.sedona-footer-hotels {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,6 +812,7 @@ content: '';
   margin-left: 6px;
   position: relative;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .social-link-twitter:hover,
@@ -865,6 +905,7 @@ content: '';
   background-repeat: no-repeat;
   width: 100%;
   min-height: 217px;
+  background-color: #626d76;
 }
 
 .infrastructure-housing-price {
@@ -1165,6 +1206,7 @@ content: '';
 
 .about-housing {
   margin-left: 2.7%;
+  width: 23%;
 }
 
 .name-housing {
@@ -1194,7 +1236,12 @@ content: '';
 }
 
 .type-housing-text-one {
-  margin-right: 15%;
+  margin-right: 13.5%;
+  width: 31%;
+}
+
+.price-housing-text {
+  width: 27%;
 }
 
 .more-info-book-it {
@@ -1207,6 +1254,7 @@ content: '';
   height: 27px;
   text-align: center;
   display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
@@ -1221,6 +1269,7 @@ content: '';
   height: 27px;
   text-align: center;
   display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
@@ -1275,11 +1324,13 @@ content: '';
 }
 
 .type-housing-text-two {
-  margin-right: 25%;
+  margin-right: 24%;
+  width: 21%;
 }
 
 .type-housing-text-three {
   margin-right: 8%;
+  width: 37%;
 }
 
 .rating-housing-three {
