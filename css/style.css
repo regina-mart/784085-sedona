@@ -964,16 +964,22 @@ content: '';
 
 .checkbox-container-infrastructure {
   padding-top: 25px;
-  padding-left: 17%;
+  /* padding-left: 29%; */
+  width: 100%;
 }
 
 .checkbox-container-type-housing {
   padding-top: 25px;
-  padding-left: 19%;
+  /* padding-left: 31%; */
+  width: 100%;
 }
 
-.label-text {
-  padding-left: 15%;
+.label-text-one {
+  padding-left: 30%;
+}
+
+.label-text-two {
+  padding-left: 30%;
 }
 
 .label-text::before {
