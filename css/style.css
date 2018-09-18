@@ -527,6 +527,7 @@ a {
 
 .arrival-departure-form-one {
   margin-left: 20px;
+
 }
 
 .arrival-departure-form-two {
@@ -568,9 +569,12 @@ a {
   height: 38px;
   position: relative;
   padding-left: 12px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-transform: uppercase;
   font-weight: 700;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
 }
 
 .number-visitors {
@@ -579,7 +583,8 @@ a {
   font-size: 14px;
   padding: 0;
   padding-left: 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-weight: 700;
 }
 
@@ -600,6 +605,7 @@ a {
 .arrival-departure-form-one:hover,
 .arrival-departure-form-two:hover {
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .arrival-departure-form-one:hover + .calendar-one,
@@ -610,7 +616,7 @@ a {
 .arrival-departure-form-one:focus,
 .arrival-departure-form-two:focus {
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #ebebeb;
 }
 
 
@@ -885,13 +891,14 @@ content: '';
 
 .developer-text {
   padding-right: 3%;
-  width: 40%;
+  width: 42%;
   margin: 0;
   margin-top: 11px;
 }
 
 .developer-logo {
   fill: #000000;
+  overflow: hidden;
 }
 
 .developer-logo:hover {
@@ -952,10 +959,12 @@ content: '';
 
 .type-housing {
   padding-left: 10%;
+  width: 13%;
 }
 
 .cost-per-day-range {
-  padding-left: 29.6%;
+  padding-left: 28.8%;
+  width: 37%;
 }
 
 .checkbox-container {
